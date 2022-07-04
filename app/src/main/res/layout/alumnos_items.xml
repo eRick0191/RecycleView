@@ -16,6 +16,7 @@
     android:layout_height="wrap_content"
     android:animateLayoutChanges="true"
     android:orientation="vertical">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,6 +35,7 @@
             android:paddingLeft="14dp"
             android:paddingRight="14dp"
             app:srcCompat="@drawable/a01"></ImageView>
+
         <LinearLayout
             android:id="@+id/lineLay"
             android:layout_width="wrap_content"
@@ -42,37 +44,34 @@
             android:layout_marginStart="4dp"
             android:layout_marginTop="2dp"
             android:layout_toEndOf="@+id/foto"
-            android:orientation="vertical"
             android:layout_toRightOf="@+id/foto"
-            >
+            android:orientation="vertical">
+
             <TextView
                 android:id="@+id/txtAlumnoNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
+                android:text="CAROLINA HERRERA GOMEZ"
                 android:textColor="@color/black"
                 android:textSize="15sp"
-                android:text="CAROLINA HERRERA GOMEZ"
-                android:textStyle="bold"
-                >
+                android:textStyle="bold">
 
             </TextView>
+
             <TextView
                 android:id="@+id/txtCarrera"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
+                android:text="Ing. Tec. Informacion"
                 android:textColor="@color/black"
                 android:textSize="18sp"
-                android:text="Ing. Tec. Informacion"
-                android:textStyle="bold"
-                >
+                android:textStyle="bold">
 
             </TextView>
 
 
-            
-            
         </LinearLayout>
 
         <TextView

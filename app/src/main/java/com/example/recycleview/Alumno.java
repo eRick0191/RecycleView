@@ -4,10 +4,19 @@ import java.util.ArrayList;
 
 
 public class Alumno {
+    private int id;
     private String carrera;
     private String nombre;
     private int img;
     private String matricula;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
 
     public Alumno(String carrera, String nombre, int img, String matricula) {
@@ -15,6 +24,10 @@ public class Alumno {
         this.nombre = nombre;
         this.img = img;
         this.matricula = matricula;
+    }
+
+    public Alumno(){
+
     }
 
     public String getCarrera() {

@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Personal/Desktop/Escritorio/RecycleView/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Personal/Desktop/Escritorio/RecycleView/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Personal/Desktop/Escritorio/RecycleView/app/src/main/res/layout/activity_mi_adaptador.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Personal/Desktop/Escritorio/RecycleView/app/src/main/res/layout/alumnos_items.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>
