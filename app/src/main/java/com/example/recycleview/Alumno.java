@@ -1,14 +1,11 @@
 package com.example.recycleview;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 
-
-public class Alumno {
+public class Alumno implements Serializable {
+    private String carrera, nombre, matricula;
     private int id;
-    private String carrera;
-    private String nombre;
-    private int img;
-    private String matricula;
+    private Integer img;
 
     public int getId() {
         return id;
@@ -18,53 +15,52 @@ public class Alumno {
         this.id = id;
     }
 
-
-    public Alumno(String carrera, String nombre, int img, String matricula) {
+    public Alumno(String carrera, String nombre, Integer img, String matricula) {
         this.carrera = carrera;
         this.nombre = nombre;
-        this.img = img;
         this.matricula = matricula;
+        this.img = img;
     }
 
-    public Alumno(){
-
+    public Alumno() {
     }
 
     public String getCarrera() {
         return carrera;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public int getImg() {
-        return img;
-    }
-
-    public String getMatricula() {
-        return matricula;
-    }
-
     public void setCarrera(String carrera) {
         this.carrera = carrera;
+    }
+
+    public String getNombre() {
+        return nombre;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public void setImg(int img) {
-        this.img = img;
+    public String getMatricula() {
+        return matricula;
     }
 
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
 
-    public static  ArrayList<Alumno> llenarAlumno(){
+    public Integer getImg() {
+        return img;
+    }
+
+    public void setImg(Integer img) {
+        this.img = img;
+    }
+
+    public static ArrayList<Alumno> llenarAlumnos(){
         ArrayList<Alumno> alumnos = new ArrayList<>();
         String carrera = "Ing. Tec. Informacion";
+
         alumnos.add(new Alumno(carrera, "GOMEZ CAMARENA JOSE RICARDO", R.drawable.a01,"2017030274"));
         alumnos.add(new Alumno(carrera, "PEÑA SOLIS DIEGO ARMANDO", R.drawable.a02,"2017030432"));
         alumnos.add(new Alumno(carrera, "GARCIA SILVA ADRIAN", R.drawable.a03,"2018030098"));

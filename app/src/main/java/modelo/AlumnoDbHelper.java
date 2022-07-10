@@ -18,7 +18,7 @@ public class AlumnoDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "sistema.db";
     private static final int DATABASE_VERSION = 1;
 
-    public AlumnoDbHelper( Context context) {
+    public AlumnoDbHelper( Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 

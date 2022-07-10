@@ -1,4 +1,5 @@
 package modelo;
+
 import android.provider.BaseColumns;
 
 public class DefineTabla {
@@ -13,11 +14,11 @@ public class DefineTabla {
         public static final String COLUMN_NAME_CARRERA = "carrera";
         public static final String COLUMN_NAME_FOTO = "foto";
         public static String[] REGISTRO = new String[]{
-                Alumnos.COLUMN_NAME_ID,
-                Alumnos.COLUMN_NAME_MATRICULA,
-                Alumnos.COLUMN_NAME_NOMBRE,
-                Alumnos.COLUMN_NAME_CARRERA,
-                Alumnos.COLUMN_NAME_FOTO
-        };
+                        Alumnos.COLUMN_NAME_ID,
+                        Alumnos.COLUMN_NAME_MATRICULA,
+                        Alumnos.COLUMN_NAME_NOMBRE,
+                        Alumnos.COLUMN_NAME_CARRERA,
+                        Alumnos.COLUMN_NAME_FOTO
+                };
     }
 }

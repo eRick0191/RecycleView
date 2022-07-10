@@ -16,12 +16,12 @@ public class AlumnosDb implements Persistencia,Proyeccion {
     private SQLiteDatabase db;
 
     public AlumnosDb(Context context, AlumnoDbHelper helper) {
-        this.context = context; this.helper = helper;
+        this.context = context;
+        this.helper = helper;
     }
 
     public AlumnosDb(Context context) {
         this.context = context;
-        this.helper = new AlumnoDbHelper(this.context);
     }
 
     @Override
