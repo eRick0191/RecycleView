@@ -13,14 +13,16 @@ public class AlumnoDbHelper extends SQLiteOpenHelper {
             + DefineTabla.Alumnos.COLUMN_NAME_MATRICULA + TEXT_TYPE + COMMA_SEP
             + DefineTabla.Alumnos.COLUMN_NAME_NOMBRE + TEXT_TYPE + COMMA_SEP
             + DefineTabla.Alumnos.COLUMN_NAME_CARRERA +TEXT_TYPE + COMMA_SEP
-            + DefineTabla.Alumnos.COLUMN_NAME_FOTO +INTEGER_TYPE + ")";
+            + DefineTabla.Alumnos.COLUMN_NAME_FOTO + TEXT_TYPE + ")";
     private static final String SQL_DELETE_ALUMNO = "DROP TABLE IF EXISTS " + DefineTabla.Alumnos.TABLE_NAME;
     private static final String DATABASE_NAME = "sistema.db";
     private static final int DATABASE_VERSION = 1;
 
-    public AlumnoDbHelper( Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
+    public AlumnoDbHelper( Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
+
+
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {

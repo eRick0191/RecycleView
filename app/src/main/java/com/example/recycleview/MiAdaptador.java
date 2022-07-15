@@ -1,6 +1,7 @@
 package com.example.recycleview;
 
 import android.content.Context;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,7 +47,10 @@ public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.ViewHolder> im
         holder.txtMatricula.setText(alumno.getMatricula());
         holder.txtNombre.setText(alumno.getNombre());
         holder.txtCarrera.setText(alumno.getCarrera());
-        holder.idImagen.setImageResource(alumno.getImg());
+
+        Uri imgUri = Uri.parse(alumno.getImgURI());
+
+        holder.idImagen.setImageURI(imgUri);
     }
 
     @Override
